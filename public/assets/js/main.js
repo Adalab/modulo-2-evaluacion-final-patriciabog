@@ -57,3 +57,5 @@ btnSearch.addEventListener('click', handleSearchClick);
 btnReset.addEventListener('click', handleResetClick);
 
 
+
+//# sourceMappingURL=main.js.map
