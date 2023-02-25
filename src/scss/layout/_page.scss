@@ -4,8 +4,16 @@ body {
   background-color: $color-bg;
   font-family: $font-main;
 }
-
-.container-section1 {
+.list__box {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 80px;
+    width: 600px;
+    height: 50%;
+    margin-bottom: 100px;
+    
+}
+.list__box1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,9 +21,15 @@ body {
   
 }
 
-.container-section2 {
+.list__box2 {
   margin-right: 80px;
   width: 600px;
   height: 50%;
-  margin-bottom: 100px
+  margin-bottom: 100px;
+}
+
+.card__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px
 }

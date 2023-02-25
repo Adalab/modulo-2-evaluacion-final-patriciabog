@@ -14,31 +14,34 @@
     <header>
       <h1>Buscador de Cócteles</h1>
     </header>
-  <main>
-    <form action="" class="containerSearch">
-      <!--Here are the buttons and write the search-->
-      <input type="text" placeholder="margarita" class="input js-input">
-      <button type="button" class="btn-search js-btn-search">Buscar</button>
-      <button type="reset" class="btn-reset js-btn-reset">Reset</button>
-  
-      <div class="ContainerItems">
-        <!--List of search Cocktails-->
-        <section class="container-section2">
-          <h3>Lista</h3>
-          <ul class="list js-list">
-           
-          </ul>
-        </section>
-        <!--List of favorite Cocktails-->
-        <section class="container-section1">
-          <h3>Cócteles favoritos</h3>
-          <ul class="favorite js-favorite">
-  
-          </ul>
-        </section>
+    <main class="main">
+      <div class="main__box">
+        <form>
+          <input class="js-input main__box-search" type="text" placeholder=" Margarita"/>
+          <input type="button" value="Buscar" class="js-search main__button" title="Buscar" />
+          <button class="js-reset main__button" title="Reset">
+            Reset
+          </button>
+          <!--Aqui empieza las listas de cocteles y favoritos -->
+        </form>
+        <div class="list__box">
+          <section class="list__box1">
+            <h2>Lista de Cócteles</h2>
+            <ul class="js-cocktail list__cocktail">
+            </ul>
+          </section>
+          <section class="list__box2">
+            <h2>Cócteles Favoritos</h2>
+            <ul class="js-favorite list__favorite">
+              <li class="js-cocktail__card card__favorite card card--fav" id="11007">
+                <h2 class="card__title card__title--fav">Margarita</h2>
+                <img class="card__img" src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" alt="Margarita">
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
-    </form>
-  </main>
+    </main>
 
     <script src="./assets/js/main.js"></script>
     
