@@ -126,7 +126,7 @@ function renderFilteredList(data) {
       const cardListImg = document.createElement('img');
       cardListImg.classList.add('card__img');
       cardListImg.setAttribute('src', drink.image);
-      //Padres
+      //Definimos los Padres
       listCocktails.appendChild(cardList);
       cardListTitle.appendChild(textCardTitle);
       cardList.appendChild(cardListTitle);
