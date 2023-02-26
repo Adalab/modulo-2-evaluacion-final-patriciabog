@@ -19,7 +19,7 @@
         <form>
           <input class="js-input main__box-search" type="text" placeholder=" Margarita"/>
           <input type="button" value="Buscar" class="js-search main__button" title="Buscar" />
-          <button class="js-reset main__button" title="Reset">
+          <button class="js-reset main__button-reset" title="Reset">
             Reset
           </button>
           <!--Aqui empieza las listas de cocteles y favoritos -->
@@ -33,22 +33,21 @@
           <section class="list__box2">
             <h2>Cócteles Favoritos</h2>
             <ul class="js-favorite list__favorite">
-              <li class="js-cocktail__card card__favorite card card--fav" id="11007">
-                <h2 class="card__title card__title--fav">Margarita</h2>
+              <li class="js-cocktail__card card__favorite card " id="11007">
+                <h2 class="card__title ">Margarita</h2>
                 <img class="card__img" src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" alt="Margarita">
               </li>
             </ul>
+            <button class="js-fav-reset card__favorite-reset" title="reset">Eliminar favoritos</button>
           </section>
         </div>
       </div>
     </main>
-
     <script src="./assets/js/main.js"></script>
-    
-<footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-  </small>
-</footer>
+    <footer class="page__footer">
+       <small>
+       &copy; Todos los derechos reservados
+       </small>
+    </footer>
   </body>
 </html>

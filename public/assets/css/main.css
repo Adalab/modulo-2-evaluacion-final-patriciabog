@@ -28,6 +28,7 @@ body {
 
 .list__box {
   display: flex;
+  justify-content: space-between;
   flex-direction: row-reverse;
   margin-right: 80px;
   width: 600px;
@@ -38,17 +39,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 80px; }
+  margin-left: 80px;
+  margin-top: 80px; }
 
 .list__box2 {
-  margin-right: 80px;
-  width: 600px;
-  height: 50%;
+  margin-top: 80px;
+  margin-left: 20px;
   margin-bottom: 100px; }
 
 .card__img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
   border-radius: 10px; }
 
 .page__header {
@@ -67,5 +69,9 @@ body {
 .main__list {
   padding-left: 2rem;
   padding-bottom: 20px; }
+
+.card__favorite--dislimg {
+  width: 30px;
+  height: 30px; }
 
 /*# sourceMappingURL=main.css.map */
