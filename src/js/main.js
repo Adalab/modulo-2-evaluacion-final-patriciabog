@@ -23,7 +23,6 @@ function getFromApi() {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-     // console.log('data')
       cocktailData = data.drinks.map((drink) => {
         const newDrink = {
           id: drink.idDrink,
@@ -39,10 +38,10 @@ function getFromApi() {
 function getLocalStorage() {
   const localStorageFavDrinks = localStorage.getItem('favorites');
   if (localStorageFavDrinks === null) {
-    //Si en el localStorage esta vacio, no hay favoritos...
+    //Si el localStorage esta vacio, no hay favoritos...
     listFavorites.innerHTML = '';
   } else {
-    //Si hay fav hago el JSON.parse a la lista que esta en el localStorage
+    //Si hay fav, hago el JSON.parse a la lista de fav que esta en el localStorage
     const drinkListStored = JSON.parse(localStorageFavDrinks);
     favorites = drinkListStored;
     renderFavoritesLocal();

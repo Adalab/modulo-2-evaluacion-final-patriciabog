@@ -1,0 +1,36 @@
+.main__box {
+    padding: 10px;
+}
+
+.form {
+    padding: 20px;
+    &__search {
+        width: 180px;
+        height: 30px;
+        font-size: 2rem;
+        padding: 5px 10px;
+        opacity: 0.8;
+        color: rgb(122, 125, 125);
+    }
+    &__button {
+       width: 100px;
+       background-color:#9933FF ;
+       color: #99FFFF;
+       font-size: 1.6rem;
+       cursor: pointer;
+       border-radius: 4px;
+       padding: 5px 10px;
+       border: none;
+       margin: 10px;
+    }
+    &__reset {
+        width: 100px;
+        background-color: #5900ff;
+        color: #99FFFF;
+        font-size: 1.6rem;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 5px 10px;
+        border: none;
+    }
+}

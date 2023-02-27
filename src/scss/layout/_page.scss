@@ -1,38 +1,5 @@
 body {
-  padding: 2rem;
   height: 100vh;
-  background-color: $color-bg;
   font-family: $font-main;
-}
-.list__box {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    margin-right: 80px;
-    width: 600px;
-    height: 50%;
-    margin-bottom: 100px;
-    
-}
-.list__box1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 80px;
-  margin-top: 80px;
-  
-  
-}
-
-.list__box2 {
-  margin-top: 80px;
-  margin-left: 20px;
-  margin-bottom: 100px;
-}
-
-.card__img {
-  width: 150px;
-  height: 150px;
-  padding: 10px;
-  border-radius: 10px
+  background-color: #c8d8dc;
 }

@@ -3,36 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Evaluación final módulo 2</title>
-      <link rel="icon" href="./assets/images/favicon.png" />
-      </head>
+    <title>Evaluacion final módulo 2</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-   
-
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+  
   <body>
-    <header>
-      <h1>Buscador de Cócteles</h1>
+    <header class="header">
+      <h1 class="header__title">Buscador de Cócteles</h1>
     </header>
     <main class="main">
       <div class="main__box">
-        <form>
-          <input class="js-input main__box-search" type="text" placeholder=" Margarita"/>
-          <input type="button" value="Buscar" class="js-search main__button" title="Buscar" />
-          <button class="js-reset main__button-reset" title="Reset">
+        <form class="form">
+          <input class="js-input form__search" type="text" placeholder=" Margarita"/>
+          <input type="button" value="Buscar" class="js-search form__button" title="Buscar" />
+          <button class="js-reset form__reset" title="Reset">
             Reset
           </button>
           <!--Aqui empieza las listas de cocteles y favoritos -->
         </form>
-        <div class="list__box">
+        <div class="list">
           <section class="list__box1">
-            <h2>Lista de Cócteles</h2>
-            <ul class="js-cocktail list__cocktail">
+            <h2 class="list__box1__title">Lista de Cócteles</h2>
+            <ul class="js-cocktail list__box1__cocktail">
             </ul>
           </section>
           <section class="list__box2">
-            <h2>Cócteles Favoritos</h2>
-            <ul class="js-favorite list__favorite">
+            <h2 class="list__box2__title">Cócteles Favoritos</h2>
+            <ul class="js-favorite list__box2__favorite">
               <li class="js-cocktail__card card__favorite card " id="11007">
                 <h2 class="card__title ">Margarita</h2>
                 <img class="card__img" src="https://www.thecocktaildb.com/images/media/drink/5noda61589575158.jpg" alt="Margarita">
