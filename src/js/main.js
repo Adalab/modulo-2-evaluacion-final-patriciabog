@@ -48,7 +48,6 @@ function getLocalStorage() {
 }
 //Pintamos lista de Cócteles Fav
 function renderFavoritesLocal() {
-  let favClass = '';
   listFavorites.innerHTML = '';
   for (const drink of favorites) {
     //Cramos un elemento li
@@ -87,7 +86,6 @@ function renderFavoritesLocal() {
 }
 //Funcion para pintar la lista de Cócteles 
 function renderFilteredList(data) {
-  let favClass = '';
   listCocktails.innerHTML = '';
   for (const drink of data) {
     const isFav = isFavorite(drink);
