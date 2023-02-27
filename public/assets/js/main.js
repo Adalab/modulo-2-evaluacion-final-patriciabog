@@ -7,15 +7,11 @@ const listCocktails = document.querySelector('.js-cocktail');
 let listFavorites = document.querySelector('.js-favorite');
 const btnFavReset = document.querySelector('.js-fav-reset');
 const urlMargarita = ('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
+
 //ARRAYS
 let cocktailData = [];
 let favorites = [];
 
-//Funcion para ejecutar las siguientes funciones
-function handleSearchButton(event) {
-  event.preventDefault();
-  getFromApi();
-}
 //Traemos data de la API con fetch
 function getFromApi() {
   const searchValue = searchInput.value;
@@ -34,11 +30,14 @@ function getFromApi() {
       imageEmpty(cocktailData);
     });
 }
-//Pintamos en localStorage
+function handleSearchButton(event) {
+  event.preventDefault();
+  getFromApi();
+}
+//Recogemos datos del localStorage
 function getLocalStorage() {
   const localStorageFavDrinks = localStorage.getItem('favorites');
   if (localStorageFavDrinks === null) {
-    //Si el localStorage esta vacio, no hay favoritos...
     listFavorites.innerHTML = '';
   } else {
     //Si hay fav, hago el JSON.parse a la lista de fav que esta en el localStorage
@@ -147,7 +146,7 @@ function isFavorite(data) {
     return true;
   }
 }
-//Función para mostrar img re relleno si no tiene
+//Función para mostrar img de relleno si no tiene
 function imageEmpty(data) {
   for (const drink of data) {
     if (drink.image === null) {
