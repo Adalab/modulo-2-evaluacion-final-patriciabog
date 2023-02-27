@@ -25,7 +25,7 @@ The challenges that I faced was to find a fuction to save in the localStorage th
 
 ## Authors  👋🏻
 
-- [@patriciabpg](https://github.com/patriciabog)
+- [@patriciabog](https://github.com/patriciabog)
 
 
 ## Demo 👩🏽‍💻
